@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C165F9941C1C68DB0046E060 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C165F9931C1C68DB0046E060 /* main.m */; };
+		C165F9971C1C68DB0046E060 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C165F9961C1C68DB0046E060 /* AppDelegate.m */; };
+		C165F99A1C1C68DB0046E060 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165F9991C1C68DB0046E060 /* ViewController.m */; };
+		C165F99D1C1C68DB0046E060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C165F99B1C1C68DB0046E060 /* Main.storyboard */; };
+		C165F99F1C1C68DB0046E060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C165F99E1C1C68DB0046E060 /* Assets.xcassets */; };
+		C165F9A21C1C68DB0046E060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C165F9A01C1C68DB0046E060 /* LaunchScreen.storyboard */; };
+		C165F9AD1C1C68DB0046E060 /* SparkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C165F9AC1C1C68DB0046E060 /* SparkleTests.m */; };
+		C165F9B81C1C68DC0046E060 /* SparkleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C165F9B71C1C68DC0046E060 /* SparkleUITests.m */; };
+		C165F9CA1C1C6B900046E060 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C165F9C61C1C6B900046E060 /* Fabric.framework */; };
+		C165F9CB1C1C6B900046E060 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C165F9C71C1C6B900046E060 /* Mapbox.framework */; };
+		C165F9CC1C1C6B900046E060 /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C165F9C81C1C6B900046E060 /* Mapbox.bundle */; };
+		C165F9CD1C1C6B900046E060 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C165F9C91C1C6B900046E060 /* Settings.bundle */; };
+		C165F9CF1C1C6D330046E060 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C165F9CE1C1C6D330046E060 /* Crashlytics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C165F9A91C1C68DB0046E060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C165F9871C1C68DB0046E060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C165F98E1C1C68DB0046E060;
+			remoteInfo = Sparkle;
+		};
+		C165F9B41C1C68DC0046E060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C165F9871C1C68DB0046E060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C165F98E1C1C68DB0046E060;
+			remoteInfo = Sparkle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C165F98F1C1C68DB0046E060 /* Sparkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sparkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C165F9931C1C68DB0046E060 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C165F9951C1C68DB0046E060 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C165F9961C1C68DB0046E060 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C165F9981C1C68DB0046E060 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C165F9991C1C68DB0046E060 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C165F99C1C1C68DB0046E060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C165F99E1C1C68DB0046E060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C165F9A11C1C68DB0046E060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C165F9A31C1C68DB0046E060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C165F9A81C1C68DB0046E060 /* SparkleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C165F9AC1C1C68DB0046E060 /* SparkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkleTests.m; sourceTree = "<group>"; };
+		C165F9AE1C1C68DB0046E060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C165F9B31C1C68DC0046E060 /* SparkleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C165F9B71C1C68DC0046E060 /* SparkleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkleUITests.m; sourceTree = "<group>"; };
+		C165F9B91C1C68DC0046E060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C165F9C61C1C6B900046E060 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
+		C165F9C71C1C6B900046E060 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = ../Mapbox.framework; sourceTree = "<group>"; };
+		C165F9C81C1C6B900046E060 /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Mapbox.bundle; path = ../Mapbox.framework/Mapbox.bundle; sourceTree = "<group>"; };
+		C165F9C91C1C6B900046E060 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Mapbox.framework/Settings.bundle; sourceTree = "<group>"; };
+		C165F9CE1C1C6D330046E060 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C165F98C1C1C68DB0046E060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C165F9CA1C1C6B900046E060 /* Fabric.framework in Frameworks */,
+				C165F9CF1C1C6D330046E060 /* Crashlytics.framework in Frameworks */,
+				C165F9CB1C1C6B900046E060 /* Mapbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C165F9A51C1C68DB0046E060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C165F9B01C1C68DB0046E060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C165F9861C1C68DB0046E060 = {
+			isa = PBXGroup;
+			children = (
+				C165F9911C1C68DB0046E060 /* Sparkle */,
+				C165F9AB1C1C68DB0046E060 /* SparkleTests */,
+				C165F9B61C1C68DC0046E060 /* SparkleUITests */,
+				C165F9901C1C68DB0046E060 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C165F9901C1C68DB0046E060 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C165F98F1C1C68DB0046E060 /* Sparkle.app */,
+				C165F9A81C1C68DB0046E060 /* SparkleTests.xctest */,
+				C165F9B31C1C68DC0046E060 /* SparkleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C165F9911C1C68DB0046E060 /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				C165F9951C1C68DB0046E060 /* AppDelegate.h */,
+				C165F9961C1C68DB0046E060 /* AppDelegate.m */,
+				C165F9981C1C68DB0046E060 /* ViewController.h */,
+				C165F9991C1C68DB0046E060 /* ViewController.m */,
+				C165F99B1C1C68DB0046E060 /* Main.storyboard */,
+				C165F99E1C1C68DB0046E060 /* Assets.xcassets */,
+				C165F9A01C1C68DB0046E060 /* LaunchScreen.storyboard */,
+				C165F9A31C1C68DB0046E060 /* Info.plist */,
+				C165F9D01C1C6E940046E060 /* Frameworks */,
+				C165F9921C1C68DB0046E060 /* Supporting Files */,
+			);
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		C165F9921C1C68DB0046E060 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C165F9C81C1C6B900046E060 /* Mapbox.bundle */,
+				C165F9C91C1C6B900046E060 /* Settings.bundle */,
+				C165F9931C1C68DB0046E060 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C165F9AB1C1C68DB0046E060 /* SparkleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C165F9AC1C1C68DB0046E060 /* SparkleTests.m */,
+				C165F9AE1C1C68DB0046E060 /* Info.plist */,
+			);
+			path = SparkleTests;
+			sourceTree = "<group>";
+		};
+		C165F9B61C1C68DC0046E060 /* SparkleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C165F9B71C1C68DC0046E060 /* SparkleUITests.m */,
+				C165F9B91C1C68DC0046E060 /* Info.plist */,
+			);
+			path = SparkleUITests;
+			sourceTree = "<group>";
+		};
+		C165F9D01C1C6E940046E060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C165F9CE1C1C6D330046E060 /* Crashlytics.framework */,
+				C165F9C61C1C6B900046E060 /* Fabric.framework */,
+				C165F9C71C1C6B900046E060 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C165F98E1C1C68DB0046E060 /* Sparkle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C165F9BC1C1C68DC0046E060 /* Build configuration list for PBXNativeTarget "Sparkle" */;
+			buildPhases = (
+				C165F98B1C1C68DB0046E060 /* Sources */,
+				C165F98C1C1C68DB0046E060 /* Frameworks */,
+				C165F98D1C1C68DB0046E060 /* Resources */,
+				C165F9C51C1C6B290046E060 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sparkle;
+			productName = Sparkle;
+			productReference = C165F98F1C1C68DB0046E060 /* Sparkle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C165F9A71C1C68DB0046E060 /* SparkleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C165F9BF1C1C68DC0046E060 /* Build configuration list for PBXNativeTarget "SparkleTests" */;
+			buildPhases = (
+				C165F9A41C1C68DB0046E060 /* Sources */,
+				C165F9A51C1C68DB0046E060 /* Frameworks */,
+				C165F9A61C1C68DB0046E060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C165F9AA1C1C68DB0046E060 /* PBXTargetDependency */,
+			);
+			name = SparkleTests;
+			productName = SparkleTests;
+			productReference = C165F9A81C1C68DB0046E060 /* SparkleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C165F9B21C1C68DB0046E060 /* SparkleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C165F9C21C1C68DC0046E060 /* Build configuration list for PBXNativeTarget "SparkleUITests" */;
+			buildPhases = (
+				C165F9AF1C1C68DB0046E060 /* Sources */,
+				C165F9B01C1C68DB0046E060 /* Frameworks */,
+				C165F9B11C1C68DB0046E060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C165F9B51C1C68DC0046E060 /* PBXTargetDependency */,
+			);
+			name = SparkleUITests;
+			productName = SparkleUITests;
+			productReference = C165F9B31C1C68DC0046E060 /* SparkleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C165F9871C1C68DB0046E060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Shanshan ZHAO";
+				TargetAttributes = {
+					C165F98E1C1C68DB0046E060 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					C165F9A71C1C68DB0046E060 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C165F98E1C1C68DB0046E060;
+					};
+					C165F9B21C1C68DB0046E060 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C165F98E1C1C68DB0046E060;
+					};
+				};
+			};
+			buildConfigurationList = C165F98A1C1C68DB0046E060 /* Build configuration list for PBXProject "Sparkle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C165F9861C1C68DB0046E060;
+			productRefGroup = C165F9901C1C68DB0046E060 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C165F98E1C1C68DB0046E060 /* Sparkle */,
+				C165F9A71C1C68DB0046E060 /* SparkleTests */,
+				C165F9B21C1C68DB0046E060 /* SparkleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C165F98D1C1C68DB0046E060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C165F9CC1C1C6B900046E060 /* Mapbox.bundle in Resources */,
+				C165F9A21C1C68DB0046E060 /* LaunchScreen.storyboard in Resources */,
+				C165F9CD1C1C6B900046E060 /* Settings.bundle in Resources */,
+				C165F99F1C1C68DB0046E060 /* Assets.xcassets in Resources */,
+				C165F99D1C1C68DB0046E060 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C165F9A61C1C68DB0046E060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C165F9B11C1C68DB0046E060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C165F9C51C1C6B290046E060 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 1e4c57318050e94ba3fc271f401aba263f1d419b 28ed58bd8b8cafe54f1a0731a132722d262b4ff5d94bf24ba430c149b573d6f1";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C165F98B1C1C68DB0046E060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C165F99A1C1C68DB0046E060 /* ViewController.m in Sources */,
+				C165F9971C1C68DB0046E060 /* AppDelegate.m in Sources */,
+				C165F9941C1C68DB0046E060 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C165F9A41C1C68DB0046E060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C165F9AD1C1C68DB0046E060 /* SparkleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C165F9AF1C1C68DB0046E060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C165F9B81C1C68DC0046E060 /* SparkleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C165F9AA1C1C68DB0046E060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C165F98E1C1C68DB0046E060 /* Sparkle */;
+			targetProxy = C165F9A91C1C68DB0046E060 /* PBXContainerItemProxy */;
+		};
+		C165F9B51C1C68DC0046E060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C165F98E1C1C68DB0046E060 /* Sparkle */;
+			targetProxy = C165F9B41C1C68DC0046E060 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C165F99B1C1C68DB0046E060 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C165F99C1C1C68DB0046E060 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C165F9A01C1C68DB0046E060 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C165F9A11C1C68DB0046E060 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C165F9BA1C1C68DC0046E060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C165F9BB1C1C68DC0046E060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C165F9BD1C1C68DC0046E060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sparkle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sparkle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C165F9BE1C1C68DC0046E060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sparkle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sparkle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C165F9C01C1C68DC0046E060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SparkleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SparkleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sparkle.app/Sparkle";
+			};
+			name = Debug;
+		};
+		C165F9C11C1C68DC0046E060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SparkleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SparkleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sparkle.app/Sparkle";
+			};
+			name = Release;
+		};
+		C165F9C31C1C68DC0046E060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SparkleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SparkleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Sparkle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C165F9C41C1C68DC0046E060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SparkleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SparkleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Sparkle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C165F98A1C1C68DB0046E060 /* Build configuration list for PBXProject "Sparkle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C165F9BA1C1C68DC0046E060 /* Debug */,
+				C165F9BB1C1C68DC0046E060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C165F9BC1C1C68DC0046E060 /* Build configuration list for PBXNativeTarget "Sparkle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C165F9BD1C1C68DC0046E060 /* Debug */,
+				C165F9BE1C1C68DC0046E060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C165F9BF1C1C68DC0046E060 /* Build configuration list for PBXNativeTarget "SparkleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C165F9C01C1C68DC0046E060 /* Debug */,
+				C165F9C11C1C68DC0046E060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C165F9C21C1C68DC0046E060 /* Build configuration list for PBXNativeTarget "SparkleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C165F9C31C1C68DC0046E060 /* Debug */,
+				C165F9C41C1C68DC0046E060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C165F9871C1C68DB0046E060 /* Project object */;
+}
