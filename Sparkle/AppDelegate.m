@@ -23,6 +23,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
  // [Fabric with:@[[MGLAccountManager class]]];
+  
+//  [[RMConfiguration sharedInstance] setAccessToken:@"<access token>"];
+
   [Fabric with:@[[MGLAccountManager class], [Crashlytics class]]];
 
 
