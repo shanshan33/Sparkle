@@ -46,6 +46,17 @@
                                             <action selector="openRightPaneWithZoneInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SNd-uH-vlv"/>
                                         </connections>
                                     </button>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAo-CX-h0i">
+                                        <rect key="frame" x="360" y="0.0" width="240" height="580"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="A4C-QL-Tce"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="olT-bM-xnY" kind="embed" id="ftn-TC-LF9"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -53,7 +64,10 @@
                                     <constraint firstItem="3ep-3f-AI8" firstAttribute="top" secondItem="idm-g3-6EE" secondAttribute="top" constant="20" id="0x3-nK-AaY"/>
                                     <constraint firstAttribute="trailing" secondItem="3ep-3f-AI8" secondAttribute="trailing" constant="20" id="DnS-W5-INY"/>
                                     <constraint firstItem="3ep-3f-AI8" firstAttribute="top" secondItem="idm-g3-6EE" secondAttribute="top" constant="20" id="LHh-eE-oqi"/>
+                                    <constraint firstItem="TAo-CX-h0i" firstAttribute="top" secondItem="idm-g3-6EE" secondAttribute="top" id="N0r-V6-vhL"/>
                                     <constraint firstItem="3ep-3f-AI8" firstAttribute="top" secondItem="idm-g3-6EE" secondAttribute="top" constant="20" id="SDU-Qr-VXs"/>
+                                    <constraint firstAttribute="trailing" secondItem="TAo-CX-h0i" secondAttribute="trailing" id="U7h-of-ZLw"/>
+                                    <constraint firstAttribute="bottom" secondItem="TAo-CX-h0i" secondAttribute="bottom" id="yaY-jc-HXT"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -67,13 +81,42 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="menuPaneView" destination="TAo-CX-h0i" id="bUM-1n-ldw"/>
                         <outlet property="transparentView" destination="idm-g3-6EE" id="skr-oZ-RAj"/>
+                        <outlet property="transparentViewRightMargin" destination="aVH-TC-A39" id="xoj-GN-xEP"/>
                         <outlet property="zone18" destination="dCm-mj-KBA" id="5nx-1I-obn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="273" y="265"/>
+            <point key="canvasLocation" x="-281" y="37"/>
+        </scene>
+        <!--Burger King Menu View Controller-->
+        <scene sceneID="dx4-wd-S8i">
+            <objects>
+                <viewController id="olT-bM-xnY" customClass="BurgerKingMenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LtM-i7-5hY">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="580"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="here i am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rog-aj-SDy">
+                                <rect key="frame" x="85" y="279" width="71" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="testLabel" destination="Rog-aj-SDy" id="jx6-Pt-3cQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJn-d1-Xxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="-97"/>
         </scene>
     </scenes>
 </document>

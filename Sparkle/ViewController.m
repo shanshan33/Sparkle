@@ -16,6 +16,10 @@
 @property (weak, nonatomic) IBOutlet UIView *transparentView;
 
 @property (weak, nonatomic) IBOutlet UIButton *zone18;
+
+@property (weak, nonatomic) IBOutlet UIView *menuPaneView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *transparentViewRightMargin;
+
 @end
 
 @implementation ViewController
@@ -27,6 +31,7 @@
   
   self.transparentView.backgroundColor = [UIColor clearColor];
   self.transparentView.opaque = NO;
+  self.menuPaneView.hidden = YES;
 }
 
 
@@ -36,7 +41,21 @@
 }
 
 
-- (IBAction)openRightPaneWithZoneInfo:(id)sender {
+- (IBAction)openRightPaneWithZoneInfo:(id)sender
+{
+  
+  [UIView animateWithDuration:1
+                        delay:0.5
+                      options: UIViewAnimationOptionCurveEaseInOut
+                   animations:^{
+                     self.menuPaneView.hidden = NO;
+                     self.transparentViewRightMargin.constant = 270;
+
+                   }
+                   completion:^(BOOL finished){
+                     NSLog(@"Done!");
+                   }];
+  
   
 }
 
